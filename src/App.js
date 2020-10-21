@@ -6,7 +6,7 @@ import Netsearch from './Netsearch';
 import { setNetsearch } from './actionnet';
 import {netcontent} from './netcontent';
 
-const mapStatetoProps = state =>{
+const mapStatetoProps = (state) =>{
   return {
     netsearchField:state.netsearchField,}
 
@@ -15,8 +15,8 @@ const mapStatetoProps = state =>{
 const mapDispatchtoProps = (dispatch) =>{
     return{
       onsearchChang : (event) =>dispatch( setNetsearch(event.target.value)),
-
-    }}
+      }
+    }
 
 
 
